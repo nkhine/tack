@@ -25,6 +25,7 @@ variable "coreos-aws" {
     type = ""
   }
 }
+
 variable "dns-service-ip" { default = "10.3.0.10" }
 variable "etcd-ips" { default = "10.0.10.10,10.0.10.11,10.0.10.12" }
 variable "instance-type" {

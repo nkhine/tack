@@ -24,4 +24,4 @@ trap finish EXIT
 
 ssh-add ${KEY_FILE}
 
-ssh -tA core@${BASTION_IP} ${COMMAND}
+ssh -p2222 -tA core@${BASTION_IP} ${COMMAND}

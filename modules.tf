@@ -89,6 +89,7 @@ module "bastion" {
   security-group-id = "${ module.security.bastion-id }"
   subnet-ids = "${ module.vpc.subnet-ids-public }"
   vpc-id = "${ module.vpc.id }"
+  region = "${ var.aws["region"] }"
 }
 
 module "worker" {
